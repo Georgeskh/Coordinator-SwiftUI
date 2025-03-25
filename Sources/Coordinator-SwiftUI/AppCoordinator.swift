@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-@available(iOS 16.0, *)
 public final class AppCoordinator: Coordinator {
     @Published public var path: [IdentifiableAnyView]
     @Published public var sheet: IdentifiableAnyView?

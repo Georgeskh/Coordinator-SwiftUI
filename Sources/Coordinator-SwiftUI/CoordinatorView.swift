@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-@available(iOS 16.0, *)
 public struct CoordinatorView<Content: View, Navigation: Coordinator>: View {
     @StateObject private var navigation: Navigation
     let mainView: Content
@@ -34,7 +33,6 @@ public struct CoordinatorView<Content: View, Navigation: Coordinator>: View {
     }
 }
 
-@available(iOS 16.0, *)
 #Preview {
     CoordinatorView(coordinator: AppCoordinator(path: [])) {_ in
         EmptyView()

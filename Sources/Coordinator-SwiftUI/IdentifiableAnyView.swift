@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUICore
 
-@available(iOS 16.0, *)
 public struct IdentifiableAnyView: Identifiable, Hashable {
     public let id: UUID
     let view: AnyView

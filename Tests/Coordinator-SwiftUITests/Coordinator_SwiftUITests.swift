@@ -2,7 +2,6 @@ import Testing
 @testable import Coordinator_SwiftUI
 
 struct CoordinatorTests {
-    @available(iOS 16.0, *)
     @Test("Pushes a view and verifies that the path array is updated correctly.")
     func testPush() {
         let coordinator = AppCoordinator()
@@ -12,7 +11,6 @@ struct CoordinatorTests {
         #expect(coordinator.path.first == view)
     }
     
-    @available(iOS 16.0, *)
     @Test("Presents a sheet and checks if the sheet property is set.")
     func testPresentSheet() {
         let coordinator = AppCoordinator()
@@ -21,7 +19,6 @@ struct CoordinatorTests {
         #expect(coordinator.sheet == sheetView)
     }
     
-    @available(iOS 16.0, *)
     // Presents a full screen cover and checks if the fullScreenCover property is set.
     @Test func testPresentFullScreenCover() {
         let coordinator = AppCoordinator()
@@ -30,7 +27,6 @@ struct CoordinatorTests {
         #expect(coordinator.fullScreenCover == fullScreenCoverView)
     }
     
-    @available(iOS 16.0, *)
     // Pushes two views, pops one, and verifies the path array.
     @Test func testPop() {
         let coordinator = AppCoordinator()
@@ -43,7 +39,6 @@ struct CoordinatorTests {
         #expect(coordinator.path.first == view1)
     }
     
-    @available(iOS 16.0, *)
     // Pushes views and then pops to root, ensuring the path is empty.
     @Test func testPopToRoot() {
         let coordinator = AppCoordinator()
@@ -53,7 +48,6 @@ struct CoordinatorTests {
         #expect(coordinator.path.count == 0)
     }
     
-    @available(iOS 16.0, *)
     // Presents and dismisses a sheet, checking if the sheet property is nil.
     @Test func testDismissSheet() {
         let coordinator = AppCoordinator()
@@ -62,7 +56,6 @@ struct CoordinatorTests {
         #expect(coordinator.sheet == nil)
     }
     
-    @available(iOS 16.0, *)
     // Presents and dismisses a full screen cover, checking if the fullScreenCover property is nil.
     @Test func testDismissFullScreenCover() {
         let coordinator = AppCoordinator()
