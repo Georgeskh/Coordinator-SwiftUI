@@ -97,6 +97,10 @@ Wraps SwiftUI views and integrates navigation logic.
 ### `IdentifiableAnyView`
 Wraps SwiftUI views for use in `NavigationStack`.
 
+## Medium article explaining the code
+
+`https://medium.com/learn-by-writing/implementing-the-swiftui-coordinator-pattern-4d061e9506d5`
+
 ## License
 MIT License – Feel free to use and modify.
 
